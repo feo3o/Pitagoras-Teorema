@@ -83,7 +83,7 @@ public class Panel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == confirm) {
 
-            if(a.getText().equals("") && b.getText().equals("")) {
+            if(a.getText().isEmpty() && b.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Você deve inserir valores numéricos", "Erro", JOptionPane.PLAIN_MESSAGE);
             }
 
